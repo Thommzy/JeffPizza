@@ -109,9 +109,7 @@
 				22B58B99272ABD0B0018EFF4 /* AppDelegate.swift */,
 				22B58B9B272ABD0B0018EFF4 /* SceneDelegate.swift */,
 				22B58B9D272ABD0B0018EFF4 /* ViewController.swift */,
-				22B58B9F272ABD0B0018EFF4 /* Main.storyboard */,
 				22B58BA2272ABD0E0018EFF4 /* Assets.xcassets */,
-				22B58BA4272ABD0E0018EFF4 /* LaunchScreen.storyboard */,
 				22B58BA7272ABD0E0018EFF4 /* Info.plist */,
 			);
 			path = TimJeffPizza;
@@ -137,6 +135,8 @@
 		22B58BC9272ABD2F0018EFF4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				22B58B9F272ABD0B0018EFF4 /* Main.storyboard */,
+				22B58BA4272ABD0E0018EFF4 /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
