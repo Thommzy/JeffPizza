@@ -16,6 +16,10 @@
 		22B58BB1272ABD0F0018EFF4 /* TimJeffPizzaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B58BB0272ABD0F0018EFF4 /* TimJeffPizzaTests.swift */; };
 		22B58BBB272ABD0F0018EFF4 /* TimJeffPizzaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B58BBA272ABD0F0018EFF4 /* TimJeffPizzaUITests.swift */; };
 		22B58BBD272ABD0F0018EFF4 /* TimJeffPizzaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B58BBC272ABD0F0018EFF4 /* TimJeffPizzaUITestsLaunchTests.swift */; };
+		22B58BD2272B22F00018EFF4 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B58BD1272B22F00018EFF4 /* OnBoardingViewController.swift */; };
+		22B58BD4272B25A20018EFF4 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B58BD3272B25A20018EFF4 /* UIView+Extension.swift */; };
+		22B58BD7272B27970018EFF4 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B58BD6272B27970018EFF4 /* MainTabBarController.swift */; };
+		22B58BD9272B294B0018EFF4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B58BD8272B294B0018EFF4 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		22B58BB6272ABD0F0018EFF4 /* TimJeffPizzaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimJeffPizzaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B58BBA272ABD0F0018EFF4 /* TimJeffPizzaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimJeffPizzaUITests.swift; sourceTree = "<group>"; };
 		22B58BBC272ABD0F0018EFF4 /* TimJeffPizzaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimJeffPizzaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		22B58BD1272B22F00018EFF4 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		22B58BD3272B25A20018EFF4 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		22B58BD6272B27970018EFF4 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		22B58BD8272B294B0018EFF4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,8 +143,11 @@
 		22B58BC9272ABD2F0018EFF4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				22B58BDA272B29590018EFF4 /* HomeViewController */,
+				22B58BD5272B274B0018EFF4 /* MainTabBarController */,
 				22B58B9F272ABD0B0018EFF4 /* Main.storyboard */,
 				22B58BA4272ABD0E0018EFF4 /* LaunchScreen.storyboard */,
+				22B58BD1272B22F00018EFF4 /* OnBoardingViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -158,6 +169,7 @@
 		22B58BCC272ABD510018EFF4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				22B58BD3272B25A20018EFF4 /* UIView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -181,6 +193,22 @@
 			children = (
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		22B58BD5272B274B0018EFF4 /* MainTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				22B58BD6272B27970018EFF4 /* MainTabBarController.swift */,
+			);
+			path = MainTabBarController;
+			sourceTree = "<group>";
+		};
+		22B58BDA272B29590018EFF4 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				22B58BD8272B294B0018EFF4 /* HomeViewController.swift */,
+			);
+			path = HomeViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,7 +344,11 @@
 			files = (
 				22B58B9E272ABD0B0018EFF4 /* ViewController.swift in Sources */,
 				22B58B9A272ABD0B0018EFF4 /* AppDelegate.swift in Sources */,
+				22B58BD7272B27970018EFF4 /* MainTabBarController.swift in Sources */,
 				22B58B9C272ABD0B0018EFF4 /* SceneDelegate.swift in Sources */,
+				22B58BD4272B25A20018EFF4 /* UIView+Extension.swift in Sources */,
+				22B58BD9272B294B0018EFF4 /* HomeViewController.swift in Sources */,
+				22B58BD2272B22F00018EFF4 /* OnBoardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
