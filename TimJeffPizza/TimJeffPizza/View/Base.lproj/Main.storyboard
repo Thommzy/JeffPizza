@@ -23,7 +23,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="635" y="631"/>
+            <point key="canvasLocation" x="429" y="76"/>
         </scene>
         <!--On Boarding View Controller-->
         <scene sceneID="4rA-oV-YsU">
@@ -79,9 +79,6 @@
                                                                     <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
                                                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                                                 </buttonConfiguration>
-                                                                <connections>
-                                                                    <action selector="marriedBtnAction:" destination="WQ2-gh-SNK" eventType="touchUpInside" id="2Ry-XK-Dmt"/>
-                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -129,14 +126,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wXV-B7-vi4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="300" y="-1685.4910714285713"/>
+            <point key="canvasLocation" x="429" y="-1633"/>
         </scene>
         <!--Main Tab Bar Controller-->
         <scene sceneID="cEe-NW-O9D">
             <objects>
                 <tabBarController storyboardIdentifier="MainTabBarController" automaticallyAdjustsScrollViewInsets="NO" id="eBz-bU-JeG" customClass="MainTabBarController" customModule="TimJeffPizza" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="nP1-gI-Xhe"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CJZ-Gs-o2x">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -147,7 +146,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gtV-8A-l3Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1445" y="-998"/>
+            <point key="canvasLocation" x="1557" y="-1633"/>
         </scene>
         <!--Settings-->
         <scene sceneID="GrR-dd-LKu">
@@ -163,13 +162,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lcY-wT-wKs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3349" y="-278"/>
+            <point key="canvasLocation" x="2681" y="-802"/>
         </scene>
         <!--Home-->
         <scene sceneID="UoS-fQ-Yts">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kBZ-1D-G5C" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="DAU-iV-8cC">
+                    <tabBarItem key="tabBarItem" title="Home" id="DAU-iV-8cC">
+                        <imageReference key="image" image="house.fill" catalog="system" symbolScale="medium"/>
                         <color key="badgeColor" systemColor="labelColor"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -184,7 +184,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hFd-NQ-uLq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="636" y="-259"/>
+            <point key="canvasLocation" x="429" y="-802"/>
         </scene>
     </scenes>
     <resources>
