@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+protocol GetListOfPizzaProtocol {
+    func listPizza(pizza: [JeffPizzaListResponseModel]?)
+    func errorMessage(error: Error?)
+}
