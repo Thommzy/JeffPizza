@@ -20,4 +20,3 @@ struct JeffPizzaListResponseModel: Codable {
         case prices
     }
 }
-
