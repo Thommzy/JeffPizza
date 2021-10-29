@@ -27,15 +27,21 @@ class OnBoardingViewController: UIViewController {
     }
     
     @IBAction func marriedBtnAction(_ sender: UIButton) {
-        
-        print("Married")
+        setupPresentMainTabBarController(userStatus: true, logInStatus: true)
     }
     
     @IBAction func singleBtnAction(_ sender: UIButton) {
+        setupPresentMainTabBarController(userStatus: false, logInStatus: true)
+    }
+}
+
+extension OnBoardingViewController {
+    func setupPresentMainTabBarController(userStatus: Bool, logInStatus: Bool) {
+        UserDefaults.standard.set(userStatus, forKey: "isMarried")
+        UserDefaults.standard.set(logInStatus, forKey: "isLoggedIn")
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let mainTabBarController = storyboard.instantiateViewController(identifier: "MainTabBarController")
         mainTabBarController.modalPresentationStyle = .overFullScreen
         self.present(mainTabBarController, animated: true, completion: nil)
-        print("Single")
     }
 }

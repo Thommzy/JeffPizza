@@ -79,6 +79,9 @@
                                                                     <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
                                                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="marriedBtnAction:" destination="WQ2-gh-SNK" eventType="touchUpInside" id="hTN-sh-vYM"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
