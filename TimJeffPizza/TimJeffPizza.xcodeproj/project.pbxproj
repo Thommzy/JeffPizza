@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22309BB9272F156F00F30701 /* PizzaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22309BB7272F156F00F30701 /* PizzaTableViewCell.swift */; };
+		22309BBA272F156F00F30701 /* PizzaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22309BB8272F156F00F30701 /* PizzaTableViewCell.xib */; };
 		22B58B9A272ABD0B0018EFF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B58B99272ABD0B0018EFF4 /* AppDelegate.swift */; };
 		22B58B9C272ABD0B0018EFF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B58B9B272ABD0B0018EFF4 /* SceneDelegate.swift */; };
 		22B58BA1272ABD0B0018EFF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B58B9F272ABD0B0018EFF4 /* Main.storyboard */; };
@@ -46,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22309BB7272F156F00F30701 /* PizzaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaTableViewCell.swift; sourceTree = "<group>"; };
+		22309BB8272F156F00F30701 /* PizzaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PizzaTableViewCell.xib; sourceTree = "<group>"; };
 		22B58B96272ABD0B0018EFF4 /* TimJeffPizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimJeffPizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B58B99272ABD0B0018EFF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22B58B9B272ABD0B0018EFF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +100,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22309BB6272F151300F30701 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				22309BBB272F157800F30701 /* PizzaTableViewCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		22309BBB272F157800F30701 /* PizzaTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				22309BB7272F156F00F30701 /* PizzaTableViewCell.swift */,
+				22309BB8272F156F00F30701 /* PizzaTableViewCell.xib */,
+			);
+			path = PizzaTableViewCell;
+			sourceTree = "<group>";
+		};
 		22B58B8D272ABD0B0018EFF4 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +140,7 @@
 		22B58B98272ABD0B0018EFF4 /* TimJeffPizza */ = {
 			isa = PBXGroup;
 			children = (
+				22309BB6272F151300F30701 /* Cells */,
 				22C1E993272BC01B003EE93C /* Services */,
 				22B58BCF272ABD750018EFF4 /* Constants */,
 				22B58BCE272ABD6D0018EFF4 /* Protocols */,
@@ -349,6 +371,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22309BBA272F156F00F30701 /* PizzaTableViewCell.xib in Resources */,
 				22B58BA6272ABD0E0018EFF4 /* LaunchScreen.storyboard in Resources */,
 				22B58BA3272ABD0E0018EFF4 /* Assets.xcassets in Resources */,
 				22B58BA1272ABD0B0018EFF4 /* Main.storyboard in Resources */,
@@ -382,6 +405,7 @@
 				22C1E997272BC457003EE93C /* PriceModel.swift in Sources */,
 				22B58BD7272B27970018EFF4 /* MainTabBarController.swift in Sources */,
 				22C1E992272BBF69003EE93C /* OnBoardingViewController+Extension.swift in Sources */,
+				22309BB9272F156F00F30701 /* PizzaTableViewCell.swift in Sources */,
 				22B58B9C272ABD0B0018EFF4 /* SceneDelegate.swift in Sources */,
 				22C1E99F272BE18B003EE93C /* ListOfPizzaProtocol.swift in Sources */,
 				22B58BD4272B25A20018EFF4 /* UIView+Extension.swift in Sources */,
