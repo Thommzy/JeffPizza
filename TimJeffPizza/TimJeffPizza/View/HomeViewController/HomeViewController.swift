@@ -10,7 +10,9 @@ import UIKit
 class HomeViewController: UIViewController {
     @IBOutlet weak var pizzaTableView: UITableView!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
+    
     let appViewModel = AppViewModel(dataService: NetworkService())
+    var pizzaArray: [JeffPizzaListResponseModel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,8 +23,7 @@ class HomeViewController: UIViewController {
     
     func setupPizzaTableView() {
         pizzaTableView.register(UINib(nibName: PizzaTableViewCell.identifer, bundle: nil), forCellReuseIdentifier: PizzaTableViewCell.identifer)
-        pizzaTableView.isHidden = false
-        spinner.stopAnimating()
+        pizzaTableView.isHidden = true
         var frame = CGRect.zero
         frame.size.height = .leastNormalMagnitude
         pizzaTableView.tableHeaderView = UIView(frame: frame)
@@ -31,7 +32,7 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return pizzaArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -39,6 +40,8 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
         if cell == nil {
             cell = Bundle.main.loadNibNamed(PizzaTableViewCell.identifer, owner: self, options: nil)?.first as? PizzaTableViewCell
         }
+        
+        cell?.pizzaItem = pizzaArray[indexPath.row]
         cell?.selectionStyle = .none
         cell?.preservesSuperviewLayoutMargins = false
         cell?.separatorInset = UIEdgeInsets.zero
@@ -47,13 +50,19 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150
+        return 200
     }
 }
 
 extension HomeViewController: GetListOfPizzaProtocol {
     func listPizza(pizza: [JeffPizzaListResponseModel]?) {
         if let pizza = pizza {
+            pizzaArray = pizza
+            DispatchQueue.main.async {
+                self.pizzaTableView.reloadData()
+                self.pizzaTableView.isHidden = false
+                self.spinner.stopAnimating()
+            }
             print(pizza.count,"--->>>pizzaCount")
             print(pizza,"--->>>pizzaList")
         }
