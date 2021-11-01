@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22309BB9272F156F00F30701 /* PizzaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22309BB7272F156F00F30701 /* PizzaTableViewCell.swift */; };
+		22309BBA272F156F00F30701 /* PizzaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22309BB8272F156F00F30701 /* PizzaTableViewCell.xib */; };
 		22B58B9A272ABD0B0018EFF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B58B99272ABD0B0018EFF4 /* AppDelegate.swift */; };
 		22B58B9C272ABD0B0018EFF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B58B9B272ABD0B0018EFF4 /* SceneDelegate.swift */; };
-		22B58B9E272ABD0B0018EFF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B58B9D272ABD0B0018EFF4 /* ViewController.swift */; };
 		22B58BA1272ABD0B0018EFF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B58B9F272ABD0B0018EFF4 /* Main.storyboard */; };
 		22B58BA3272ABD0E0018EFF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22B58BA2272ABD0E0018EFF4 /* Assets.xcassets */; };
 		22B58BA6272ABD0E0018EFF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B58BA4272ABD0E0018EFF4 /* LaunchScreen.storyboard */; };
@@ -20,6 +21,13 @@
 		22B58BD4272B25A20018EFF4 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B58BD3272B25A20018EFF4 /* UIView+Extension.swift */; };
 		22B58BD7272B27970018EFF4 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B58BD6272B27970018EFF4 /* MainTabBarController.swift */; };
 		22B58BD9272B294B0018EFF4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B58BD8272B294B0018EFF4 /* HomeViewController.swift */; };
+		22C1E992272BBF69003EE93C /* OnBoardingViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C1E991272BBF69003EE93C /* OnBoardingViewController+Extension.swift */; };
+		22C1E995272BC395003EE93C /* JeffPizzaListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C1E994272BC395003EE93C /* JeffPizzaListModel.swift */; };
+		22C1E997272BC457003EE93C /* PriceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C1E996272BC457003EE93C /* PriceModel.swift */; };
+		22C1E999272BCE96003EE93C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C1E998272BCE96003EE93C /* NetworkService.swift */; };
+		22C1E99B272BD0AB003EE93C /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C1E99A272BD0AB003EE93C /* AppViewModel.swift */; };
+		22C1E99D272BE150003EE93C /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C1E99C272BE150003EE93C /* NetworkServiceProtocol.swift */; };
+		22C1E99F272BE18B003EE93C /* ListOfPizzaProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C1E99E272BE18B003EE93C /* ListOfPizzaProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +48,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22309BB7272F156F00F30701 /* PizzaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaTableViewCell.swift; sourceTree = "<group>"; };
+		22309BB8272F156F00F30701 /* PizzaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PizzaTableViewCell.xib; sourceTree = "<group>"; };
 		22B58B96272ABD0B0018EFF4 /* TimJeffPizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimJeffPizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B58B99272ABD0B0018EFF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22B58B9B272ABD0B0018EFF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		22B58B9D272ABD0B0018EFF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		22B58BA0272ABD0B0018EFF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22B58BA2272ABD0E0018EFF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22B58BA5272ABD0E0018EFF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +66,13 @@
 		22B58BD3272B25A20018EFF4 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		22B58BD6272B27970018EFF4 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		22B58BD8272B294B0018EFF4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		22C1E991272BBF69003EE93C /* OnBoardingViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnBoardingViewController+Extension.swift"; sourceTree = "<group>"; };
+		22C1E994272BC395003EE93C /* JeffPizzaListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeffPizzaListModel.swift; sourceTree = "<group>"; };
+		22C1E996272BC457003EE93C /* PriceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceModel.swift; sourceTree = "<group>"; };
+		22C1E998272BCE96003EE93C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		22C1E99A272BD0AB003EE93C /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		22C1E99C272BE150003EE93C /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		22C1E99E272BE18B003EE93C /* ListOfPizzaProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfPizzaProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +100,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22309BB6272F151300F30701 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				22309BBB272F157800F30701 /* PizzaTableViewCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		22309BBB272F157800F30701 /* PizzaTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				22309BB7272F156F00F30701 /* PizzaTableViewCell.swift */,
+				22309BB8272F156F00F30701 /* PizzaTableViewCell.xib */,
+			);
+			path = PizzaTableViewCell;
+			sourceTree = "<group>";
+		};
 		22B58B8D272ABD0B0018EFF4 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +140,8 @@
 		22B58B98272ABD0B0018EFF4 /* TimJeffPizza */ = {
 			isa = PBXGroup;
 			children = (
+				22309BB6272F151300F30701 /* Cells */,
+				22C1E993272BC01B003EE93C /* Services */,
 				22B58BCF272ABD750018EFF4 /* Constants */,
 				22B58BCE272ABD6D0018EFF4 /* Protocols */,
 				22B58BCD272ABD5A0018EFF4 /* Constants */,
@@ -116,7 +151,6 @@
 				22B58BCA272ABD3A0018EFF4 /* ViewModel */,
 				22B58B99272ABD0B0018EFF4 /* AppDelegate.swift */,
 				22B58B9B272ABD0B0018EFF4 /* SceneDelegate.swift */,
-				22B58B9D272ABD0B0018EFF4 /* ViewController.swift */,
 				22B58BA2272ABD0E0018EFF4 /* Assets.xcassets */,
 				22B58BA7272ABD0E0018EFF4 /* Info.plist */,
 			);
@@ -145,9 +179,9 @@
 			children = (
 				22B58BDA272B29590018EFF4 /* HomeViewController */,
 				22B58BD5272B274B0018EFF4 /* MainTabBarController */,
+				22C1E990272BB270003EE93C /* OnBoardingViewController */,
 				22B58B9F272ABD0B0018EFF4 /* Main.storyboard */,
 				22B58BA4272ABD0E0018EFF4 /* LaunchScreen.storyboard */,
-				22B58BD1272B22F00018EFF4 /* OnBoardingViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -155,6 +189,7 @@
 		22B58BCA272ABD3A0018EFF4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				22C1E99A272BD0AB003EE93C /* AppViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -162,6 +197,8 @@
 		22B58BCB272ABD470018EFF4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				22C1E994272BC395003EE93C /* JeffPizzaListModel.swift */,
+				22C1E996272BC457003EE93C /* PriceModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -170,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				22B58BD3272B25A20018EFF4 /* UIView+Extension.swift */,
+				22C1E991272BBF69003EE93C /* OnBoardingViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -184,6 +222,8 @@
 		22B58BCE272ABD6D0018EFF4 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				22C1E99C272BE150003EE93C /* NetworkServiceProtocol.swift */,
+				22C1E99E272BE18B003EE93C /* ListOfPizzaProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -209,6 +249,22 @@
 				22B58BD8272B294B0018EFF4 /* HomeViewController.swift */,
 			);
 			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		22C1E990272BB270003EE93C /* OnBoardingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				22B58BD1272B22F00018EFF4 /* OnBoardingViewController.swift */,
+			);
+			path = OnBoardingViewController;
+			sourceTree = "<group>";
+		};
+		22C1E993272BC01B003EE93C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				22C1E998272BCE96003EE93C /* NetworkService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,6 +371,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22309BBA272F156F00F30701 /* PizzaTableViewCell.xib in Resources */,
 				22B58BA6272ABD0E0018EFF4 /* LaunchScreen.storyboard in Resources */,
 				22B58BA3272ABD0E0018EFF4 /* Assets.xcassets in Resources */,
 				22B58BA1272ABD0B0018EFF4 /* Main.storyboard in Resources */,
@@ -342,11 +399,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22B58B9E272ABD0B0018EFF4 /* ViewController.swift in Sources */,
+				22C1E999272BCE96003EE93C /* NetworkService.swift in Sources */,
 				22B58B9A272ABD0B0018EFF4 /* AppDelegate.swift in Sources */,
+				22C1E995272BC395003EE93C /* JeffPizzaListModel.swift in Sources */,
+				22C1E997272BC457003EE93C /* PriceModel.swift in Sources */,
 				22B58BD7272B27970018EFF4 /* MainTabBarController.swift in Sources */,
+				22C1E992272BBF69003EE93C /* OnBoardingViewController+Extension.swift in Sources */,
+				22309BB9272F156F00F30701 /* PizzaTableViewCell.swift in Sources */,
 				22B58B9C272ABD0B0018EFF4 /* SceneDelegate.swift in Sources */,
+				22C1E99F272BE18B003EE93C /* ListOfPizzaProtocol.swift in Sources */,
 				22B58BD4272B25A20018EFF4 /* UIView+Extension.swift in Sources */,
+				22C1E99D272BE150003EE93C /* NetworkServiceProtocol.swift in Sources */,
+				22C1E99B272BD0AB003EE93C /* AppViewModel.swift in Sources */,
 				22B58BD9272B294B0018EFF4 /* HomeViewController.swift in Sources */,
 				22B58BD2272B22F00018EFF4 /* OnBoardingViewController.swift in Sources */,
 			);
@@ -533,6 +597,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -561,6 +626,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
