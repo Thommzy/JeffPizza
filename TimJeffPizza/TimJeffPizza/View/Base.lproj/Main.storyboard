@@ -16,14 +16,64 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6gc-mg-XVd">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DUj-fZ-8gR">
+                                        <rect key="frame" x="15" y="379" width="384" height="50"/>
+                                        <subviews>
+                                            <activityIndicatorView opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" id="eys-Ge-Z3u">
+                                                <rect key="frame" x="-15" y="3" width="414" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="color" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </activityIndicatorView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="IKv-PH-6yA"/>
+                                        </constraints>
+                                    </view>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="d9n-3d-XZY">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="782-Ln-H1v"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="VjS-Nd-0bQ"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="d9n-3d-XZY" firstAttribute="leading" secondItem="6gc-mg-XVd" secondAttribute="leading" id="Mm3-M6-G3Z"/>
+                                    <constraint firstItem="DUj-fZ-8gR" firstAttribute="centerY" secondItem="6gc-mg-XVd" secondAttribute="centerY" id="VV7-lR-Khm"/>
+                                    <constraint firstItem="d9n-3d-XZY" firstAttribute="top" secondItem="6gc-mg-XVd" secondAttribute="top" id="bMC-3e-Wcv"/>
+                                    <constraint firstItem="DUj-fZ-8gR" firstAttribute="leading" secondItem="6gc-mg-XVd" secondAttribute="leading" constant="15" id="hY8-ic-JOW"/>
+                                    <constraint firstAttribute="trailing" secondItem="DUj-fZ-8gR" secondAttribute="trailing" constant="15" id="kf3-OJ-A97"/>
+                                    <constraint firstAttribute="bottom" secondItem="d9n-3d-XZY" secondAttribute="bottom" id="p41-MI-hrQ"/>
+                                    <constraint firstItem="DUj-fZ-8gR" firstAttribute="centerX" secondItem="6gc-mg-XVd" secondAttribute="centerX" id="vwA-2N-cAH"/>
+                                    <constraint firstAttribute="trailing" secondItem="d9n-3d-XZY" secondAttribute="trailing" id="zf7-eq-gDr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="6gc-mg-XVd" secondAttribute="bottom" id="81W-jh-cp5"/>
+                            <constraint firstItem="6gc-mg-XVd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="CsJ-eJ-bAo"/>
+                            <constraint firstItem="6gc-mg-XVd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="88" id="Vuq-Cb-Dcb"/>
+                            <constraint firstItem="6gc-mg-XVd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dLs-AX-rYX"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="A99-3c-vaZ"/>
+                    <connections>
+                        <outlet property="pizzaTableView" destination="d9n-3d-XZY" id="duJ-J3-Dq3"/>
+                        <outlet property="spinner" destination="eys-Ge-Z3u" id="FPC-f9-MGd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="429" y="76"/>
+            <point key="canvasLocation" x="428.98550724637687" y="75.669642857142847"/>
         </scene>
         <!--On Boarding View Controller-->
         <scene sceneID="4rA-oV-YsU">
