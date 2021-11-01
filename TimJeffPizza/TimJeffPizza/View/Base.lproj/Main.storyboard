@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6gc-mg-XVd">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DUj-fZ-8gR">
-                                        <rect key="frame" x="15" y="379" width="384" height="50"/>
+                                        <rect key="frame" x="15" y="337.5" width="384" height="50"/>
                                         <subviews>
                                             <activityIndicatorView opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" id="eys-Ge-Z3u">
                                                 <rect key="frame" x="-15" y="3" width="414" height="44"/>
@@ -35,7 +35,7 @@
                                         </constraints>
                                     </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="d9n-3d-XZY">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="dataSource" destination="BYZ-38-t0r" id="782-Ln-H1v"/>
@@ -59,9 +59,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="6gc-mg-XVd" secondAttribute="bottom" id="81W-jh-cp5"/>
                             <constraint firstItem="6gc-mg-XVd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="CsJ-eJ-bAo"/>
                             <constraint firstItem="6gc-mg-XVd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="88" id="Vuq-Cb-Dcb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6gc-mg-XVd" secondAttribute="bottom" id="YaZ-OD-tk8"/>
                             <constraint firstItem="6gc-mg-XVd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dLs-AX-rYX"/>
                         </constraints>
                     </view>
