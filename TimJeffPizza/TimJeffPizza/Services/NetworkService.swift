@@ -17,9 +17,12 @@ class NetworkService: NetworkServiceProtocol {
                 print(error?.localizedDescription ?? String())
             }
             do {
-                let result = try JSONDecoder().decode([JeffPizzaListResponseModel].self, from: data!)
-                completion(result, nil)
-                return
+                if let data = data {
+                    let result = try JSONDecoder().decode([JeffPizzaListResponseModel].self, from: data)
+                    completion(result, nil)
+                    return
+                    
+                }
             } catch {
                 completion(nil, error)
                 return
