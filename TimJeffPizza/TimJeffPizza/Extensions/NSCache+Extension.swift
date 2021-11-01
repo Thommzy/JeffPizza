@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+extension NSCache {
+  @objc class var sharedInstance: NSCache<NSString, AnyObject> {
+      let cache = NSCache<NSString, AnyObject>()
+      return cache
+  }
+}
