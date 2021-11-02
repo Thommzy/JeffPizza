@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+protocol ItemTableViewCellProtocol: AnyObject {
+    func plusButtonTapped(cell: ItemTableViewCell)
+    func minusButtonTapped(cell: ItemTableViewCell)
+}
