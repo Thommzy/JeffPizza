@@ -62,7 +62,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="0.23185055272108843" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="0.43561330782312924" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Yd2-Xp-mcU" firstAttribute="top" secondItem="66x-OO-1dV" secondAttribute="top" constant="10" id="Ddd-Fd-ipm"/>
                             <constraint firstItem="Yd2-Xp-mcU" firstAttribute="leading" secondItem="66x-OO-1dV" secondAttribute="leading" id="W3E-2f-m2E"/>

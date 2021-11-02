@@ -21,12 +21,14 @@ class HomeViewController: UIViewController {
         setupPizzaTableView()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
     func setupPizzaTableView() {
         pizzaTableView.register(UINib(nibName: PizzaTableViewCell.identifer, bundle: nil), forCellReuseIdentifier: PizzaTableViewCell.identifer)
         pizzaTableView.isHidden = true
-        var frame = CGRect.zero
-        frame.size.height = .leastNormalMagnitude
-        pizzaTableView.tableHeaderView = UIView(frame: frame)
     }
 }
 
@@ -51,6 +53,12 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailVc = DetailViewController(nibName: "DetailViewController", bundle: nil)
+        detailVc.pizzaData = pizzaArray[indexPath.row]
+        self.navigationController?.pushViewController(detailVc, animated: true)
     }
 }
 

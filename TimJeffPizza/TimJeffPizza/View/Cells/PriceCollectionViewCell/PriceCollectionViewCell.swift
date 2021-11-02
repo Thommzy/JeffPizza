@@ -10,7 +10,6 @@ import UIKit
 class PriceCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var sizeLbl: UILabel!
-    @IBOutlet weak var priceBtn: UIButton!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var parentView: UIView!
     
@@ -21,8 +20,7 @@ class PriceCollectionViewCell: UICollectionViewCell {
     }
     
     func setupParentView() {
-        parentView.layer.cornerRadius = 10
-        parentView.layer.masksToBounds = true
+        parentView.setupViewBorder(cornerRadius: 10, borderWidth: nil, masksToBound: true)
     }
     
     var priceDetails: Price? {

@@ -19,11 +19,11 @@ class OnBoardingViewController: UIViewController {
     }
     
     func setupMarriedParentView() {
-        marriedParentView.setupViewBorder(cornerRadius: 10, borderWidth: 5)
+        marriedParentView.setupViewBorder(cornerRadius: 10, borderWidth: 5, masksToBound: nil)
     }
     
     func setupSingleParentView() {
-        singleParentView.setupViewBorder(cornerRadius: 10, borderWidth: 5)
+        singleParentView.setupViewBorder(cornerRadius: 10, borderWidth: 5, masksToBound: nil)
     }
     
     @IBAction func marriedBtnAction(_ sender: UIButton) {
