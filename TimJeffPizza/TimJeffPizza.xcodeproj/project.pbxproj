@@ -12,6 +12,9 @@
 		22309BC0272FD7BA00F30701 /* PriceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22309BBE272FD7BA00F30701 /* PriceCollectionViewCell.swift */; };
 		22309BC1272FD7BA00F30701 /* PriceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22309BBF272FD7BA00F30701 /* PriceCollectionViewCell.xib */; };
 		22309BC3272FF5FB00F30701 /* NSCache+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22309BC2272FF5FB00F30701 /* NSCache+Extension.swift */; };
+		227885062730019B000F89A6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227885042730019B000F89A6 /* DetailViewController.swift */; };
+		227885072730019B000F89A6 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 227885052730019B000F89A6 /* DetailViewController.xib */; };
+		2278850927306D1C000F89A6 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2278850827306D1B000F89A6 /* UIImageView+Extension.swift */; };
 		22B58B9A272ABD0B0018EFF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B58B99272ABD0B0018EFF4 /* AppDelegate.swift */; };
 		22B58B9C272ABD0B0018EFF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B58B9B272ABD0B0018EFF4 /* SceneDelegate.swift */; };
 		22B58BA1272ABD0B0018EFF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B58B9F272ABD0B0018EFF4 /* Main.storyboard */; };
@@ -56,6 +59,9 @@
 		22309BBE272FD7BA00F30701 /* PriceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceCollectionViewCell.swift; sourceTree = "<group>"; };
 		22309BBF272FD7BA00F30701 /* PriceCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PriceCollectionViewCell.xib; sourceTree = "<group>"; };
 		22309BC2272FF5FB00F30701 /* NSCache+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSCache+Extension.swift"; sourceTree = "<group>"; };
+		227885042730019B000F89A6 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		227885052730019B000F89A6 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		2278850827306D1B000F89A6 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		22B58B96272ABD0B0018EFF4 /* TimJeffPizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimJeffPizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B58B99272ABD0B0018EFF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22B58B9B272ABD0B0018EFF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +139,15 @@
 			path = PriceCollectionViewCell;
 			sourceTree = "<group>";
 		};
+		227885032730017C000F89A6 /* DetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				227885042730019B000F89A6 /* DetailViewController.swift */,
+				227885052730019B000F89A6 /* DetailViewController.xib */,
+			);
+			path = DetailViewController;
+			sourceTree = "<group>";
+		};
 		22B58B8D272ABD0B0018EFF4 = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +208,7 @@
 		22B58BC9272ABD2F0018EFF4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				227885032730017C000F89A6 /* DetailViewController */,
 				22B58BDA272B29590018EFF4 /* HomeViewController */,
 				22B58BD5272B274B0018EFF4 /* MainTabBarController */,
 				22C1E990272BB270003EE93C /* OnBoardingViewController */,
@@ -225,6 +241,7 @@
 				22B58BD3272B25A20018EFF4 /* UIView+Extension.swift */,
 				22C1E991272BBF69003EE93C /* OnBoardingViewController+Extension.swift */,
 				22309BC2272FF5FB00F30701 /* NSCache+Extension.swift */,
+				2278850827306D1B000F89A6 /* UIImageView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -389,6 +406,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22309BBA272F156F00F30701 /* PizzaTableViewCell.xib in Resources */,
+				227885072730019B000F89A6 /* DetailViewController.xib in Resources */,
 				22B58BA6272ABD0E0018EFF4 /* LaunchScreen.storyboard in Resources */,
 				22B58BA3272ABD0E0018EFF4 /* Assets.xcassets in Resources */,
 				22B58BA1272ABD0B0018EFF4 /* Main.storyboard in Resources */,
@@ -418,6 +436,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22C1E999272BCE96003EE93C /* NetworkService.swift in Sources */,
+				227885062730019B000F89A6 /* DetailViewController.swift in Sources */,
 				22B58B9A272ABD0B0018EFF4 /* AppDelegate.swift in Sources */,
 				22C1E995272BC395003EE93C /* JeffPizzaListModel.swift in Sources */,
 				22C1E997272BC457003EE93C /* PriceModel.swift in Sources */,
@@ -428,6 +447,7 @@
 				22C1E99F272BE18B003EE93C /* ListOfPizzaProtocol.swift in Sources */,
 				22B58BD4272B25A20018EFF4 /* UIView+Extension.swift in Sources */,
 				22C1E99D272BE150003EE93C /* NetworkServiceProtocol.swift in Sources */,
+				2278850927306D1C000F89A6 /* UIImageView+Extension.swift in Sources */,
 				22309BC0272FD7BA00F30701 /* PriceCollectionViewCell.swift in Sources */,
 				22C1E99B272BD0AB003EE93C /* AppViewModel.swift in Sources */,
 				22B58BD9272B294B0018EFF4 /* HomeViewController.swift in Sources */,

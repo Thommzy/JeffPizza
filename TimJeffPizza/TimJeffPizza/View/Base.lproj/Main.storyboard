@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!-- -->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="TimJeffPizza" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" title=" " automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="HomeViewController" customModule="TimJeffPizza" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,7 +34,7 @@
                                             <constraint firstAttribute="height" constant="50" id="IKv-PH-6yA"/>
                                         </constraints>
                                     </view>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="d9n-3d-XZY">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="d9n-3d-XZY">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
@@ -65,7 +65,10 @@
                             <constraint firstItem="6gc-mg-XVd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dLs-AX-rYX"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="A99-3c-vaZ"/>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" id="A99-3c-vaZ">
+                        <barButtonItem key="backBarButtonItem" title=" " id="iuT-IB-3Dr"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="pizzaTableView" destination="d9n-3d-XZY" id="duJ-J3-Dq3"/>
                         <outlet property="spinner" destination="eys-Ge-Z3u" id="FPC-f9-MGd"/>
@@ -220,14 +223,13 @@
         <!--Home-->
         <scene sceneID="UoS-fQ-Yts">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kBZ-1D-G5C" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="kBZ-1D-G5C" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" id="DAU-iV-8cC">
                         <imageReference key="image" image="house.fill" catalog="system" symbolScale="medium"/>
                         <color key="badgeColor" systemColor="labelColor"/>
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3vO-LJ-1fv">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
