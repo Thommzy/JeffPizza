@@ -9,7 +9,7 @@ import Foundation
 
 class NetworkService: NetworkServiceProtocol {
     func parse(completion: @escaping ([JeffPizzaListResponseModel]?, Error?) -> ()) {
-        let api = URL(string: "https://gist.githubusercontent.com/eliseo-juan/c9c124b0899ae9adc254146783c0b764/raw")
+        let api = URL(string: "\(Constants.baseURL)/c9c124b0899ae9adc254146783c0b764/raw")
         
         URLSession.shared.dataTask(with: api!) {
             data, response, error in
