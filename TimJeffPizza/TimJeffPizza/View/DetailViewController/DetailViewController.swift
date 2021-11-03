@@ -14,10 +14,6 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var priceCollectionView: UICollectionView!
     @IBOutlet weak var pizzaImageView: UIImageView!
     @IBOutlet weak var payBtn: UIButton!
-    @IBOutlet weak var countLabel: UILabel!
-    @IBOutlet weak var counterParentView: UIView!
-    @IBOutlet weak var plusBtn: UIButton!
-    @IBOutlet weak var minusBtn: UIButton!
     @IBOutlet weak var itemTableView: UITableView!
     @IBOutlet weak var itemTableViewParentView: UIView!
     @IBOutlet weak var itemTableViewHeightConstant: NSLayoutConstraint!
@@ -84,6 +80,19 @@ class DetailViewController: UIViewController {
     }
     
     @IBAction func payBtnAction(_ sender: UIButton) {
+        let popupVc = PopupViewController(nibName: "PopupViewController", bundle: nil)
+        popupVc.totalPrice = priceTotalLbl.text
+        popupVc.pizzaName = pizzaData?.name
+        let userType = UserDefaults.standard.bool(forKey: "isMarried")
+        switch userType {
+        case true:
+            popupVc.isMarried = true
+        case false:
+            popupVc.isMarried = false
+        }
+        let navigationCtrl = UINavigationController(rootViewController: popupVc)
+        navigationCtrl.modalPresentationStyle = .overFullScreen
+        self.present(navigationCtrl, animated: true, completion: nil)
         print("Pay Now!")
     }
 }
@@ -91,6 +100,7 @@ class DetailViewController: UIViewController {
 extension DetailViewController: ItemTableViewCellProtocol {
     func plusButtonTapped(cell: ItemTableViewCell) {
         if let indexPath = self.itemTableView.indexPath(for: cell) {
+            paymentParentView.isHidden = false
             var count = Int(cell.countLbl.text!) ?? Int()
             count += 1
             cell.countLbl.text = "\(count)"
@@ -104,6 +114,9 @@ extension DetailViewController: ItemTableViewCellProtocol {
         
         if let indexPath = self.itemTableView.indexPath(for: cell) {
             var count = Int(cell.countLbl.text!) ?? Int()
+            if priceItemArray.count < 2 && count == 1 {
+                paymentParentView.isHidden = true
+            }
             if count <= 1 {
                 if count > 0 {
                     count -= 1
@@ -201,7 +214,6 @@ extension DetailViewController: UICollectionViewDelegate, UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let sizeItem = priceArray[indexPath.row].size
-        paymentParentView.isHidden = false
         if priceItemArray.contains(where: {$0.size == sizeItem}) {
         } else {
             priceItemArray.append(priceArray[indexPath.row])
