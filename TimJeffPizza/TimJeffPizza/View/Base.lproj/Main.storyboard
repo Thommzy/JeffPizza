@@ -81,7 +81,7 @@
         <!--On Boarding View Controller-->
         <scene sceneID="4rA-oV-YsU">
             <objects>
-                <viewController id="WQ2-gh-SNK" customClass="OnBoardingViewController" customModule="TimJeffPizza" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OnBoardingViewController" id="WQ2-gh-SNK" customClass="OnBoardingViewController" customModule="TimJeffPizza" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ws1-fq-foW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -207,18 +207,55 @@
         <!--Settings-->
         <scene sceneID="GrR-dd-LKu">
             <objects>
-                <viewController id="ycU-bL-WCI" sceneMemberID="viewController">
+                <viewController id="ycU-bL-WCI" customClass="SettingsViewController" customModule="TimJeffPizza" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gwx-Iu-75G">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KW2-28-SSS">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6X9-qG-uDm">
+                                        <rect key="frame" x="15" y="359.5" width="384" height="50"/>
+                                        <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="0.72015837585034015" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="p1a-Ol-Hjq"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Logout">
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="logoutBtnAction:" destination="ycU-bL-WCI" eventType="touchUpInside" id="iQK-eg-139"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="6X9-qG-uDm" firstAttribute="centerY" secondItem="KW2-28-SSS" secondAttribute="centerY" id="784-0J-lBZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="6X9-qG-uDm" secondAttribute="trailing" constant="15" id="GmL-nx-96L"/>
+                                    <constraint firstItem="6X9-qG-uDm" firstAttribute="leading" secondItem="KW2-28-SSS" secondAttribute="leading" constant="15" id="xoC-j2-2Oe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="3kY-3H-DxH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KW2-28-SSS" firstAttribute="leading" secondItem="3kY-3H-DxH" secondAttribute="leading" id="9E4-rC-FNV"/>
+                            <constraint firstItem="3kY-3H-DxH" firstAttribute="trailing" secondItem="KW2-28-SSS" secondAttribute="trailing" id="B5B-df-BLc"/>
+                            <constraint firstItem="KW2-28-SSS" firstAttribute="top" secondItem="3kY-3H-DxH" secondAttribute="top" id="LkT-hY-5a6"/>
+                            <constraint firstItem="KW2-28-SSS" firstAttribute="bottom" secondItem="3kY-3H-DxH" secondAttribute="bottom" id="VLm-Vm-u2w"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="gearshape.fill" catalog="system" id="pvh-Sh-E50"/>
+                    <connections>
+                        <outlet property="logoutBtn" destination="6X9-qG-uDm" id="Jo7-nE-BMk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lcY-wT-wKs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2681" y="-802"/>
+            <point key="canvasLocation" x="2679.7101449275365" y="-802.23214285714278"/>
         </scene>
         <!--Home-->
         <scene sceneID="UoS-fQ-Yts">
