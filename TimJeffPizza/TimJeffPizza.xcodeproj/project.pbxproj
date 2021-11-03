@@ -18,6 +18,12 @@
 		2278850E27310F56000F89A6 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2278850C27310F56000F89A6 /* ItemTableViewCell.swift */; };
 		2278850F27310F56000F89A6 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2278850D27310F56000F89A6 /* ItemTableViewCell.xib */; };
 		2278851527317C43000F89A6 /* ItemTableViewCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2278851427317C43000F89A6 /* ItemTableViewCellProtocol.swift */; };
+		2278851D273192A8000F89A6 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2278851B273192A8000F89A6 /* PopupViewController.swift */; };
+		2278851E273192A8000F89A6 /* PopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2278851C273192A8000F89A6 /* PopupViewController.xib */; };
+		2278852127325249000F89A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2278852027325249000F89A6 /* Constants.swift */; };
+		227885252732643A000F89A6 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227885232732643A000F89A6 /* SummaryViewController.swift */; };
+		227885262732643A000F89A6 /* SummaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 227885242732643A000F89A6 /* SummaryViewController.xib */; };
+		2278852927326FE2000F89A6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2278852827326FE2000F89A6 /* SettingsViewController.swift */; };
 		22B58B9A272ABD0B0018EFF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B58B99272ABD0B0018EFF4 /* AppDelegate.swift */; };
 		22B58B9C272ABD0B0018EFF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B58B9B272ABD0B0018EFF4 /* SceneDelegate.swift */; };
 		22B58BA1272ABD0B0018EFF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B58B9F272ABD0B0018EFF4 /* Main.storyboard */; };
@@ -68,6 +74,12 @@
 		2278850C27310F56000F89A6 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		2278850D27310F56000F89A6 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
 		2278851427317C43000F89A6 /* ItemTableViewCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCellProtocol.swift; sourceTree = "<group>"; };
+		2278851B273192A8000F89A6 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		2278851C273192A8000F89A6 /* PopupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupViewController.xib; sourceTree = "<group>"; };
+		2278852027325249000F89A6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		227885232732643A000F89A6 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
+		227885242732643A000F89A6 /* SummaryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SummaryViewController.xib; sourceTree = "<group>"; };
+		2278852827326FE2000F89A6 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		22B58B96272ABD0B0018EFF4 /* TimJeffPizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimJeffPizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B58B99272ABD0B0018EFF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22B58B9B272ABD0B0018EFF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -164,6 +176,40 @@
 			path = ItemTableViewCell;
 			sourceTree = "<group>";
 		};
+		22788516273187C0000F89A6 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				2278851F273192B2000F89A6 /* PopupViewController */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		2278851F273192B2000F89A6 /* PopupViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2278851B273192A8000F89A6 /* PopupViewController.swift */,
+				2278851C273192A8000F89A6 /* PopupViewController.xib */,
+			);
+			path = PopupViewController;
+			sourceTree = "<group>";
+		};
+		2278852227326423000F89A6 /* SummaryViewController */ = {
+			isa = PBXGroup;
+			children = (
+				227885232732643A000F89A6 /* SummaryViewController.swift */,
+				227885242732643A000F89A6 /* SummaryViewController.xib */,
+			);
+			path = SummaryViewController;
+			sourceTree = "<group>";
+		};
+		2278852727326FCA000F89A6 /* SettingsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2278852827326FE2000F89A6 /* SettingsViewController.swift */,
+			);
+			path = SettingsViewController;
+			sourceTree = "<group>";
+		};
 		22B58B8D272ABD0B0018EFF4 = {
 			isa = PBXGroup;
 			children = (
@@ -188,7 +234,6 @@
 			isa = PBXGroup;
 			children = (
 				22C1E993272BC01B003EE93C /* Services */,
-				22B58BCF272ABD750018EFF4 /* Constants */,
 				22B58BCE272ABD6D0018EFF4 /* Protocols */,
 				22B58BCD272ABD5A0018EFF4 /* Constants */,
 				22B58BCC272ABD510018EFF4 /* Extensions */,
@@ -223,6 +268,9 @@
 		22B58BC9272ABD2F0018EFF4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2278852727326FCA000F89A6 /* SettingsViewController */,
+				2278852227326423000F89A6 /* SummaryViewController */,
+				22788516273187C0000F89A6 /* CustomViews */,
 				22309BB6272F151300F30701 /* Cells */,
 				227885032730017C000F89A6 /* DetailViewController */,
 				22B58BDA272B29590018EFF4 /* HomeViewController */,
@@ -265,6 +313,7 @@
 		22B58BCD272ABD5A0018EFF4 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				2278852027325249000F89A6 /* Constants.swift */,
 			);
 			name = Constants;
 			sourceTree = "<group>";
@@ -277,13 +326,6 @@
 				2278851427317C43000F89A6 /* ItemTableViewCellProtocol.swift */,
 			);
 			path = Protocols;
-			sourceTree = "<group>";
-		};
-		22B58BCF272ABD750018EFF4 /* Constants */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Constants;
 			sourceTree = "<group>";
 		};
 		22B58BD5272B274B0018EFF4 /* MainTabBarController */ = {
@@ -425,6 +467,8 @@
 				22309BBA272F156F00F30701 /* PizzaTableViewCell.xib in Resources */,
 				227885072730019B000F89A6 /* DetailViewController.xib in Resources */,
 				22B58BA6272ABD0E0018EFF4 /* LaunchScreen.storyboard in Resources */,
+				227885262732643A000F89A6 /* SummaryViewController.xib in Resources */,
+				2278851E273192A8000F89A6 /* PopupViewController.xib in Resources */,
 				22B58BA3272ABD0E0018EFF4 /* Assets.xcassets in Resources */,
 				22B58BA1272ABD0B0018EFF4 /* Main.storyboard in Resources */,
 				2278850F27310F56000F89A6 /* ItemTableViewCell.xib in Resources */,
@@ -454,6 +498,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22C1E999272BCE96003EE93C /* NetworkService.swift in Sources */,
+				2278852127325249000F89A6 /* Constants.swift in Sources */,
 				227885062730019B000F89A6 /* DetailViewController.swift in Sources */,
 				22B58B9A272ABD0B0018EFF4 /* AppDelegate.swift in Sources */,
 				22C1E995272BC395003EE93C /* JeffPizzaListModel.swift in Sources */,
@@ -472,7 +517,10 @@
 				22C1E99B272BD0AB003EE93C /* AppViewModel.swift in Sources */,
 				22B58BD9272B294B0018EFF4 /* HomeViewController.swift in Sources */,
 				22B58BD2272B22F00018EFF4 /* OnBoardingViewController.swift in Sources */,
+				227885252732643A000F89A6 /* SummaryViewController.swift in Sources */,
 				22309BC3272FF5FB00F30701 /* NSCache+Extension.swift in Sources */,
+				2278851D273192A8000F89A6 /* PopupViewController.swift in Sources */,
+				2278852927326FE2000F89A6 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
