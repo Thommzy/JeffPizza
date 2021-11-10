@@ -10,7 +10,6 @@ import Foundation
 class NetworkService: NetworkServiceProtocol {
     func parse(completion: @escaping ([JeffPizzaListResponseModel]?, Error?) -> ()) {
         let api = URL(string: "\(Constants.baseURL)/c9c124b0899ae9adc254146783c0b764/raw")
-        
         URLSession.shared.dataTask(with: api!) {
             data, response, error in
             if error != nil {
@@ -21,7 +20,6 @@ class NetworkService: NetworkServiceProtocol {
                     let result = try JSONDecoder().decode([JeffPizzaListResponseModel].self, from: data)
                     completion(result, nil)
                     return
-                    
                 }
             } catch {
                 completion(nil, error)

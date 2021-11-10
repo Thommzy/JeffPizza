@@ -13,7 +13,7 @@ extension UIImageView {
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard
                 let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
-                let mimeType = response?.mimeType, mimeType.hasPrefix(Constants.image),
+                let mimeType = response?.mimeType, mimeType.hasPrefix(NSLocalizedString("image", comment: "default Image")),
                 let data = data, error == nil,
                 let image = UIImage(data: data)
             else { return }

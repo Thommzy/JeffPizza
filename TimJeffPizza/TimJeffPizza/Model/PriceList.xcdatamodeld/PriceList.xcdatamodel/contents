@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19461" systemVersion="20G165" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+    <entity name="PriceClass" representedClassName="PriceClass" syncable="YES">
+        <attribute name="priceAmount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="priceQuantity" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="prizeSize" optional="YES" attributeType="String"/>
+        <relationship name="priceList" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PriceList" inverseName="priceClass" inverseEntity="PriceList"/>
+    </entity>
+    <entity name="PriceList" representedClassName="PriceList" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="imageURL" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="priceClass" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PriceClass" inverseName="priceList" inverseEntity="PriceClass"/>
+    </entity>
+    <elements>
+        <element name="PriceList" positionX="-63" positionY="-18" width="128" height="104"/>
+        <element name="PriceClass" positionX="-54" positionY="0" width="128" height="89"/>
+    </elements>
 </model>

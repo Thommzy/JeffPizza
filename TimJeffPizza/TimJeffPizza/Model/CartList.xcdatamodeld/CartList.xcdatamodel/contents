@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19461" systemVersion="20G165" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+    <entity name="CartPizzaList" representedClassName="CartPizzaList" syncable="YES">
+        <attribute name="cartImage" optional="YES" attributeType="String"/>
+        <attribute name="cartItemTotal" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cartName" optional="YES" attributeType="String"/>
+        <relationship name="cartpizzaquantitylist" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CartPizzaQuantityList" inverseName="cartpizzalist" inverseEntity="CartPizzaQuantityList"/>
+    </entity>
+    <entity name="CartPizzaQuantityList" representedClassName="CartPizzaQuantityList" syncable="YES">
+        <attribute name="pizzaQuantity" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="pizzaSize" optional="YES" attributeType="String"/>
+        <relationship name="cartpizzalist" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CartPizzaList" inverseName="cartpizzaquantitylist" inverseEntity="CartPizzaList"/>
+    </entity>
+    <elements>
+        <element name="CartPizzaList" positionX="-45" positionY="0" width="128" height="43"/>
+        <element name="CartPizzaQuantityList" positionX="237.19140625" positionY="151.5234375" width="128" height="43"/>
+    </elements>
 </model>
