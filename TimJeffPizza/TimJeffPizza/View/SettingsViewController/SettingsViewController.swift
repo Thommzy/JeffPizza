@@ -23,9 +23,9 @@ class SettingsViewController: UIViewController {
     
     @IBAction func logoutBtnAction(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let initialViewController = storyboard.instantiateViewController(identifier: ViewControllers.onBoardingViewController)
+        let initialViewController = storyboard.instantiateViewController(identifier: NSLocalizedString("onBoardingViewController", comment: "onBoardingViewController"))
         let navController = UINavigationController(rootViewController: initialViewController)
-        UserDefaults.standard.set(false, forKey: Constants.isLoggedIn)
+        UserDefaults.standard.set(false, forKey: NSLocalizedString("isLoggedIn", comment: "isLoggedIn"))
         navController.modalPresentationStyle = .overFullScreen
         self.present(navController, animated: true, completion: nil)
     }
