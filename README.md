@@ -3,7 +3,8 @@ Pizza App.
 JEFF PIZZA APP
 
 [Demo Link:- Jeff Pizza MVP App](https://www.loom.com/share/f7251a96752445c19edcbb6e38310db9)
-[Public Github Link:](https://github.com/Thommzy/JeffPizza)
+
+
 - Core Data Used For Cart Storage.
 - Worked on "thinks to improve"
 - Added Unit Test.
@@ -14,3 +15,6 @@ JEFF PIZZA APP
 - Worked on some constraints.
 - App available in Light and Dark mode.
 - Architecture:- MVVM( Model-View-ViewModel)
+
+
+[Public Github Link:](https://github.com/Thommzy/JeffPizza)
