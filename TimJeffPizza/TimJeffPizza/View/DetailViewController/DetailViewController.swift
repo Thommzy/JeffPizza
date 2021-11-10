@@ -24,6 +24,8 @@ class DetailViewController: UIViewController {
     var pizzaData: JeffPizzaListResponseModel?
     var priceArray: [Price] = []
     var priceItemArray: [Price] = []
+    var cartPizzaList: [CartPizzaList] = []
+    var cartItemPizzaList: [CartPizzaQuantityList] = []
     var totalPriceArry: [Double] = []
     var collectionViewCellWidth: CGFloat = 65.0
     var collectionViewCellHeight: CGFloat = 60.0
@@ -32,6 +34,8 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         setupDatas()
         setupPriceCollectionView()
         setupPizzaImageView()
@@ -47,6 +51,7 @@ class DetailViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
         removeTableviewObserver()
     }
     
@@ -79,21 +84,27 @@ class DetailViewController: UIViewController {
         _ = navigationController?.popViewController(animated: true)
     }
     
-    @IBAction func payBtnAction(_ sender: UIButton) {
-        let popupVc = PopupViewController(nibName: "PopupViewController", bundle: nil)
-        popupVc.totalPrice = priceTotalLbl.text
-        popupVc.pizzaName = pizzaData?.name
-        let userType = UserDefaults.standard.bool(forKey: "isMarried")
-        switch userType {
-        case true:
-            popupVc.isMarried = true
-        case false:
-            popupVc.isMarried = false
+    @IBAction func addToCartBtnAction(_ sender: UIButton) {
+        let filter = priceTotalLbl.text!.filter { char in
+            return char != "$"
         }
-        let navigationCtrl = UINavigationController(rootViewController: popupVc)
-        navigationCtrl.modalPresentationStyle = .overFullScreen
-        self.present(navigationCtrl, animated: true, completion: nil)
-        print("Pay Now!")
+        let formattedTotal = Int64(Double(filter) ?? Double())
+        
+        let data = CoreDataManager.shared.fetchData()
+        let checkExist = data.map{$0.cartName == pizzaData?.name}
+        
+        if let index = checkExist.firstIndex(of: true)  {
+            CoreDataManager.shared.deleteData(data[index])
+        }
+        let cart = CartPizzaList(context: CoreDataManager.shared.viewContext)
+        cart.cartImage = pizzaData?.imageURL
+        cart.cartItemTotal = formattedTotal
+        cart.cartName = pizzaData?.name
+        cart.cartpizzaquantitylist = NSSet(array: cartItemPizzaList)
+        cartPizzaList.append(cart)
+        CoreDataManager.shared.save()
+        let cartListVc = CartListViewController(nibName: "CartListViewController", bundle: nil)
+        self.navigationController?.pushViewController(cartListVc, animated: true)
     }
 }
 
@@ -107,6 +118,8 @@ extension DetailViewController: ItemTableViewCellProtocol {
             let itemTotal = Double(priceItemArray[indexPath.row].price)
             totalPriceArry.append(itemTotal)
             priceTotalLbl.text = "$\(totalPriceArry.reduce(0, +))"
+            cartItemPizzaList[indexPath.row].pizzaQuantity = Int64(count)
+            CoreDataManager.shared.save()
         }
     }
     
@@ -141,6 +154,9 @@ extension DetailViewController: ItemTableViewCellProtocol {
                 totalPriceArry.append(-itemPrice)
                 priceTotalLbl.text = "$\(totalPriceArry.reduce(0, +))"
             }
+            
+            cartItemPizzaList[indexPath.row].pizzaQuantity = Int64(count)
+            CoreDataManager.shared.save()
         }
     }
 }
@@ -182,7 +198,6 @@ extension DetailViewController {
             self.itemTableView.removeObserver(self, forKeyPath: "contentSize")
         }
     }
-    
     /**
      This method is used to observeValue in table view.
      */
@@ -216,8 +231,19 @@ extension DetailViewController: UICollectionViewDelegate, UICollectionViewDataSo
         let sizeItem = priceArray[indexPath.row].size
         if priceItemArray.contains(where: {$0.size == sizeItem}) {
         } else {
+            paymentParentView.isHidden = false
+            let itemTotal = Double(priceArray[indexPath.row].price)
+            totalPriceArry.append(itemTotal)
+            priceTotalLbl.text = "$\(totalPriceArry.reduce(0, +))"
             priceItemArray.append(priceArray[indexPath.row])
             itemTableView.reloadData()
+            if cartPizzaList.contains(where: { cartlist in
+                return cartlist.cartName == pizzaData?.name
+            }) {
+            } else {
+                let quantityList = CoreDataManager.shared.createPizzaQuantityList(quantity: 1, size: priceArray[indexPath.row].size)
+                cartItemPizzaList.append(quantityList)
+            }
         }
     }
 }
