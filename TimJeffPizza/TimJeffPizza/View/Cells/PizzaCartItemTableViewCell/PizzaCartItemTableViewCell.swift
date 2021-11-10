@@ -9,15 +9,26 @@ import UIKit
 
 class PizzaCartItemTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var quantityLabel: UILabel!
+    @IBOutlet weak var sizeLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+    }
+    
+    func setupItem(item: CartPizzaQuantityList?) {
+        if let item = item {
+            quantityLabel.text = "\(item.pizzaQuantity)"
+            sizeLabel.text = item.pizzaSize
+        }
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
+    static var identifer: String {
+        return String(describing: self)
+    }
 }
