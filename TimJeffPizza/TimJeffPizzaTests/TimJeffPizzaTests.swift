@@ -9,25 +9,45 @@ import XCTest
 @testable import TimJeffPizza
 
 class TimJeffPizzaTests: XCTestCase {
-
+    
+    var sut: URLSession!
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        try super.setUpWithError()
+        sut = URLSession(configuration: .default)
     }
-
+    
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        sut = nil
+        try super.tearDownWithError()
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    
+    func testValidApiCallOfstatusCode200() throws {
+        //given
+        
+        let urlsString = "\(Constants.baseURL)/c9c124b0899ae9adc254146783c0b764/raw"
+        
+        let url = URL(string: urlsString)!
+        let promise = expectation(description: "Status Code: 200")
+        
+        //when
+        let dataTask = sut.dataTask(with: url) {_, response, error in
+        //then
+            if let error = error {
+                XCTFail("Error: \(error.localizedDescription)")
+                return
+            } else if let statusCode = (response as? HTTPURLResponse)?.statusCode {
+                if statusCode == 200 {
+                    // 2
+                    promise.fulfill()
+                } else {
+                    XCTFail("Status Code: \(statusCode)")
+                }
+            }
+            
         }
+        dataTask.resume()
+        //3
+        wait(for: [promise], timeout: 5)
     }
-
 }
