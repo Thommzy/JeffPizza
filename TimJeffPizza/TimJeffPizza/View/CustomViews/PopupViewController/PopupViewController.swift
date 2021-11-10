@@ -79,7 +79,7 @@ class PopupViewController: UIViewController {
     }
     
     @IBAction func yesBtnAction(_ sender: UIButton) {
-        let summaryVc = SummaryViewController(nibName: ViewControllers.summaryViewController, bundle: nil)
+        let summaryVc = SummaryViewController(nibName: NSLocalizedString("summaryViewController", comment: "summaryViewController"), bundle: nil)
         summaryVc.pizzaName = pizzaName
         summaryVc.totalPrice = totalPrice
         self.navigationController?.pushViewController(summaryVc, animated: true)

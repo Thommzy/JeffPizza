@@ -10,9 +10,11 @@ import UIKit
 class HomeViewController: UIViewController {
     @IBOutlet weak var pizzaTableView: UITableView!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
+    @IBOutlet weak var cartBtn: UIBarButtonItem!
     
     let appViewModel = AppViewModel(dataService: NetworkService())
     var pizzaArray: [JeffPizzaListResponseModel] = []
+    var globalStoredPizzaArray: [CartPizzaList] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,12 +25,23 @@ class HomeViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+        setupCartBtn()
+    }
+    
+    func setupCartBtn() {
+        let cartArr = CoreDataManager.shared.fetchData()
+        cartBtn.setBadge(text: "\(cartArr.count)")
     }
     
     func setupPizzaTableView() {
         pizzaTableView.register(UINib(nibName: PizzaTableViewCell.identifer, bundle: nil), forCellReuseIdentifier: PizzaTableViewCell.identifer)
         pizzaTableView.isHidden = true
+    }
+    
+    @IBAction func cartBtnAction(_ sender: UIBarButtonItem) {
+        let cartListVc = CartListViewController(nibName: "CartListViewController", bundle: nil)
+        self.navigationController?.pushViewController(cartListVc, animated: true)
     }
 }
 
@@ -45,9 +58,6 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
         
         cell?.pizzaItem = pizzaArray[indexPath.row]
         cell?.selectionStyle = .none
-        cell?.preservesSuperviewLayoutMargins = false
-        cell?.separatorInset = UIEdgeInsets.zero
-        cell?.layoutMargins = UIEdgeInsets.zero
         return cell!
     }
     
@@ -71,14 +81,10 @@ extension HomeViewController: GetListOfPizzaProtocol {
                 self.pizzaTableView.isHidden = false
                 self.spinner.stopAnimating()
             }
-            print(pizza.count,"--->>>pizzaCount")
-            print(pizza,"--->>>pizzaList")
         }
     }
     
     func errorMessage(error: Error?) {
-        if let error = error {
-            print("error--->>> \(error)")
-        }
+        
     }
 }

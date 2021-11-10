@@ -24,6 +24,10 @@
 		227885252732643A000F89A6 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227885232732643A000F89A6 /* SummaryViewController.swift */; };
 		227885262732643A000F89A6 /* SummaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 227885242732643A000F89A6 /* SummaryViewController.xib */; };
 		2278852927326FE2000F89A6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2278852827326FE2000F89A6 /* SettingsViewController.swift */; };
+		2299EB6C273B4009004CF550 /* PizzaCartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2299EB6A273B4009004CF550 /* PizzaCartTableViewCell.swift */; };
+		2299EB6D273B4009004CF550 /* PizzaCartTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2299EB6B273B4009004CF550 /* PizzaCartTableViewCell.xib */; };
+		2299EB71273B4978004CF550 /* PizzaCartItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2299EB6F273B4978004CF550 /* PizzaCartItemTableViewCell.swift */; };
+		2299EB72273B4978004CF550 /* PizzaCartItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2299EB70273B4978004CF550 /* PizzaCartItemTableViewCell.xib */; };
 		22B58B9A272ABD0B0018EFF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B58B99272ABD0B0018EFF4 /* AppDelegate.swift */; };
 		22B58B9C272ABD0B0018EFF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B58B9B272ABD0B0018EFF4 /* SceneDelegate.swift */; };
 		22B58BA1272ABD0B0018EFF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B58B9F272ABD0B0018EFF4 /* Main.storyboard */; };
@@ -43,6 +47,16 @@
 		22C1E99B272BD0AB003EE93C /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C1E99A272BD0AB003EE93C /* AppViewModel.swift */; };
 		22C1E99D272BE150003EE93C /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C1E99C272BE150003EE93C /* NetworkServiceProtocol.swift */; };
 		22C1E99F272BE18B003EE93C /* ListOfPizzaProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C1E99E272BE18B003EE93C /* ListOfPizzaProtocol.swift */; };
+		22C2FF2D273AC1BB00154760 /* CartList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22C2FF2B273AC1BB00154760 /* CartList.xcdatamodeld */; };
+		22C2FF47273AC94600154760 /* CoreDatamanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C2FF46273AC94600154760 /* CoreDatamanager.swift */; };
+		22C2FF4A273ACDDB00154760 /* CartListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C2FF48273ACDDB00154760 /* CartListViewController.swift */; };
+		22C2FF4B273ACDDB00154760 /* CartListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22C2FF49273ACDDB00154760 /* CartListViewController.xib */; };
+		22C2FF5B273B084F00154760 /* CartPizzaQuantityList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C2FF57273B084F00154760 /* CartPizzaQuantityList+CoreDataClass.swift */; };
+		22C2FF5C273B084F00154760 /* CartPizzaQuantityList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C2FF58273B084F00154760 /* CartPizzaQuantityList+CoreDataProperties.swift */; };
+		22C2FF5D273B084F00154760 /* CartPizzaList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C2FF59273B084F00154760 /* CartPizzaList+CoreDataClass.swift */; };
+		22C2FF5E273B084F00154760 /* CartPizzaList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C2FF5A273B084F00154760 /* CartPizzaList+CoreDataProperties.swift */; };
+		22DF7101273BA49000307FC1 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DF7100273BA48F00307FC1 /* UIBarButtonItem+Extension.swift */; };
+		22DF7104273BBF6800307FC1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22DF7106273BBF6800307FC1 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +94,10 @@
 		227885232732643A000F89A6 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		227885242732643A000F89A6 /* SummaryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SummaryViewController.xib; sourceTree = "<group>"; };
 		2278852827326FE2000F89A6 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		2299EB6A273B4009004CF550 /* PizzaCartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaCartTableViewCell.swift; sourceTree = "<group>"; };
+		2299EB6B273B4009004CF550 /* PizzaCartTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PizzaCartTableViewCell.xib; sourceTree = "<group>"; };
+		2299EB6F273B4978004CF550 /* PizzaCartItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaCartItemTableViewCell.swift; sourceTree = "<group>"; };
+		2299EB70273B4978004CF550 /* PizzaCartItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PizzaCartItemTableViewCell.xib; sourceTree = "<group>"; };
 		22B58B96272ABD0B0018EFF4 /* TimJeffPizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimJeffPizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B58B99272ABD0B0018EFF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22B58B9B272ABD0B0018EFF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,10 +117,23 @@
 		22C1E991272BBF69003EE93C /* OnBoardingViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnBoardingViewController+Extension.swift"; sourceTree = "<group>"; };
 		22C1E994272BC395003EE93C /* JeffPizzaListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeffPizzaListModel.swift; sourceTree = "<group>"; };
 		22C1E996272BC457003EE93C /* PriceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceModel.swift; sourceTree = "<group>"; };
-		22C1E998272BCE96003EE93C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		22C1E998272BCE96003EE93C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.simpleColoring; };
 		22C1E99A272BD0AB003EE93C /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
 		22C1E99C272BE150003EE93C /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
 		22C1E99E272BE18B003EE93C /* ListOfPizzaProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfPizzaProtocol.swift; sourceTree = "<group>"; };
+		22C2FF2C273AC1BB00154760 /* CartList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CartList.xcdatamodel; sourceTree = "<group>"; };
+		22C2FF46273AC94600154760 /* CoreDatamanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDatamanager.swift; sourceTree = "<group>"; };
+		22C2FF48273ACDDB00154760 /* CartListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartListViewController.swift; sourceTree = "<group>"; };
+		22C2FF49273ACDDB00154760 /* CartListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartListViewController.xib; sourceTree = "<group>"; };
+		22C2FF57273B084F00154760 /* CartPizzaQuantityList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CartPizzaQuantityList+CoreDataClass.swift"; sourceTree = "<group>"; };
+		22C2FF58273B084F00154760 /* CartPizzaQuantityList+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CartPizzaQuantityList+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		22C2FF59273B084F00154760 /* CartPizzaList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CartPizzaList+CoreDataClass.swift"; sourceTree = "<group>"; };
+		22C2FF5A273B084F00154760 /* CartPizzaList+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CartPizzaList+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		22DF7100273BA48F00307FC1 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		22DF7105273BBF6800307FC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		22DF7107273BBFC300307FC1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		22DF7108273BBFC300307FC1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		22DF7109273BBFC300307FC1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +167,8 @@
 				22309BBD272FD78C00F30701 /* PriceCollectionViewCell */,
 				22309BBB272F157800F30701 /* PizzaTableViewCell */,
 				2278851027310F5D000F89A6 /* ItemTableViewCell */,
+				2299EB6E273B4010004CF550 /* PizzaCartTableViewCell */,
+				2299EB73273B4980004CF550 /* PizzaCartItemTableViewCell */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -210,6 +243,24 @@
 			path = SettingsViewController;
 			sourceTree = "<group>";
 		};
+		2299EB6E273B4010004CF550 /* PizzaCartTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2299EB6A273B4009004CF550 /* PizzaCartTableViewCell.swift */,
+				2299EB6B273B4009004CF550 /* PizzaCartTableViewCell.xib */,
+			);
+			path = PizzaCartTableViewCell;
+			sourceTree = "<group>";
+		};
+		2299EB73273B4980004CF550 /* PizzaCartItemTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2299EB6F273B4978004CF550 /* PizzaCartItemTableViewCell.swift */,
+				2299EB70273B4978004CF550 /* PizzaCartItemTableViewCell.xib */,
+			);
+			path = PizzaCartItemTableViewCell;
+			sourceTree = "<group>";
+		};
 		22B58B8D272ABD0B0018EFF4 = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +295,7 @@
 				22B58B9B272ABD0B0018EFF4 /* SceneDelegate.swift */,
 				22B58BA2272ABD0E0018EFF4 /* Assets.xcassets */,
 				22B58BA7272ABD0E0018EFF4 /* Info.plist */,
+				22DF7106273BBF6800307FC1 /* Localizable.strings */,
 			);
 			path = TimJeffPizza;
 			sourceTree = "<group>";
@@ -273,6 +325,7 @@
 				22788516273187C0000F89A6 /* CustomViews */,
 				22309BB6272F151300F30701 /* Cells */,
 				227885032730017C000F89A6 /* DetailViewController */,
+				22C2FF4C273ACDE100154760 /* CartListViewController */,
 				22B58BDA272B29590018EFF4 /* HomeViewController */,
 				22B58BD5272B274B0018EFF4 /* MainTabBarController */,
 				22C1E990272BB270003EE93C /* OnBoardingViewController */,
@@ -293,8 +346,14 @@
 		22B58BCB272ABD470018EFF4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				22C2FF57273B084F00154760 /* CartPizzaQuantityList+CoreDataClass.swift */,
+				22C2FF58273B084F00154760 /* CartPizzaQuantityList+CoreDataProperties.swift */,
+				22C2FF59273B084F00154760 /* CartPizzaList+CoreDataClass.swift */,
+				22C2FF5A273B084F00154760 /* CartPizzaList+CoreDataProperties.swift */,
 				22C1E994272BC395003EE93C /* JeffPizzaListModel.swift */,
 				22C1E996272BC457003EE93C /* PriceModel.swift */,
+				22C2FF2B273AC1BB00154760 /* CartList.xcdatamodeld */,
+				22C2FF46273AC94600154760 /* CoreDatamanager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -306,6 +365,7 @@
 				22C1E991272BBF69003EE93C /* OnBoardingViewController+Extension.swift */,
 				22309BC2272FF5FB00F30701 /* NSCache+Extension.swift */,
 				2278850827306D1B000F89A6 /* UIImageView+Extension.swift */,
+				22DF7100273BA48F00307FC1 /* UIBarButtonItem+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -358,6 +418,15 @@
 				22C1E998272BCE96003EE93C /* NetworkService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		22C2FF4C273ACDE100154760 /* CartListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				22C2FF48273ACDDB00154760 /* CartListViewController.swift */,
+				22C2FF49273ACDDB00154760 /* CartListViewController.xib */,
+			);
+			path = CartListViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -446,6 +515,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 22B58B8D272ABD0B0018EFF4;
 			productRefGroup = 22B58B97272ABD0B0018EFF4 /* Products */;
@@ -468,8 +538,12 @@
 				227885072730019B000F89A6 /* DetailViewController.xib in Resources */,
 				22B58BA6272ABD0E0018EFF4 /* LaunchScreen.storyboard in Resources */,
 				227885262732643A000F89A6 /* SummaryViewController.xib in Resources */,
+				22C2FF4B273ACDDB00154760 /* CartListViewController.xib in Resources */,
+				2299EB72273B4978004CF550 /* PizzaCartItemTableViewCell.xib in Resources */,
 				2278851E273192A8000F89A6 /* PopupViewController.xib in Resources */,
+				2299EB6D273B4009004CF550 /* PizzaCartTableViewCell.xib in Resources */,
 				22B58BA3272ABD0E0018EFF4 /* Assets.xcassets in Resources */,
+				22DF7104273BBF6800307FC1 /* Localizable.strings in Resources */,
 				22B58BA1272ABD0B0018EFF4 /* Main.storyboard in Resources */,
 				2278850F27310F56000F89A6 /* ItemTableViewCell.xib in Resources */,
 				22309BC1272FD7BA00F30701 /* PriceCollectionViewCell.xib in Resources */,
@@ -499,17 +573,27 @@
 			files = (
 				22C1E999272BCE96003EE93C /* NetworkService.swift in Sources */,
 				2278852127325249000F89A6 /* Constants.swift in Sources */,
+				22C2FF2D273AC1BB00154760 /* CartList.xcdatamodeld in Sources */,
 				227885062730019B000F89A6 /* DetailViewController.swift in Sources */,
+				2299EB6C273B4009004CF550 /* PizzaCartTableViewCell.swift in Sources */,
 				22B58B9A272ABD0B0018EFF4 /* AppDelegate.swift in Sources */,
 				22C1E995272BC395003EE93C /* JeffPizzaListModel.swift in Sources */,
 				22C1E997272BC457003EE93C /* PriceModel.swift in Sources */,
 				22B58BD7272B27970018EFF4 /* MainTabBarController.swift in Sources */,
+				22C2FF5C273B084F00154760 /* CartPizzaQuantityList+CoreDataProperties.swift in Sources */,
+				22C2FF47273AC94600154760 /* CoreDatamanager.swift in Sources */,
 				22C1E992272BBF69003EE93C /* OnBoardingViewController+Extension.swift in Sources */,
+				22C2FF5B273B084F00154760 /* CartPizzaQuantityList+CoreDataClass.swift in Sources */,
 				22309BB9272F156F00F30701 /* PizzaTableViewCell.swift in Sources */,
 				22B58B9C272ABD0B0018EFF4 /* SceneDelegate.swift in Sources */,
 				2278851527317C43000F89A6 /* ItemTableViewCellProtocol.swift in Sources */,
+				22DF7101273BA49000307FC1 /* UIBarButtonItem+Extension.swift in Sources */,
+				22C2FF5E273B084F00154760 /* CartPizzaList+CoreDataProperties.swift in Sources */,
+				2299EB71273B4978004CF550 /* PizzaCartItemTableViewCell.swift in Sources */,
 				22C1E99F272BE18B003EE93C /* ListOfPizzaProtocol.swift in Sources */,
+				22C2FF5D273B084F00154760 /* CartPizzaList+CoreDataClass.swift in Sources */,
 				22B58BD4272B25A20018EFF4 /* UIView+Extension.swift in Sources */,
+				22C2FF4A273ACDDB00154760 /* CartListViewController.swift in Sources */,
 				2278850E27310F56000F89A6 /* ItemTableViewCell.swift in Sources */,
 				22C1E99D272BE150003EE93C /* NetworkServiceProtocol.swift in Sources */,
 				2278850927306D1C000F89A6 /* UIImageView+Extension.swift in Sources */,
@@ -561,6 +645,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				22B58BA0272ABD0B0018EFF4 /* Base */,
+				22DF7107273BBFC300307FC1 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -569,8 +654,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				22B58BA5272ABD0E0018EFF4 /* Base */,
+				22DF7108273BBFC300307FC1 /* es */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		22DF7106273BBF6800307FC1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22DF7105273BBF6800307FC1 /* en */,
+				22DF7109273BBFC300307FC1 /* es */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -580,6 +675,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -641,6 +737,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -886,6 +983,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		22C2FF2B273AC1BB00154760 /* CartList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				22C2FF2C273AC1BB00154760 /* CartList.xcdatamodel */,
+			);
+			currentVersion = 22C2FF2C273AC1BB00154760 /* CartList.xcdatamodel */;
+			path = CartList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 22B58B8E272ABD0B0018EFF4 /* Project object */;
 }

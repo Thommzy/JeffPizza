@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WQ2-gh-SNK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WQ2-gh-SNK">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -26,7 +26,8 @@
                                             <activityIndicatorView opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" id="eys-Ge-Z3u">
                                                 <rect key="frame" x="-15" y="3" width="414" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="color" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <color key="color" systemColor="labelColor"/>
                                             </activityIndicatorView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -65,11 +66,18 @@
                             <constraint firstItem="6gc-mg-XVd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dLs-AX-rYX"/>
                         </constraints>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="A99-3c-vaZ">
                         <barButtonItem key="backBarButtonItem" title=" " id="iuT-IB-3Dr"/>
+                        <barButtonItem key="rightBarButtonItem" id="bvF-PQ-ng9">
+                            <imageReference key="image" image="cart.fill" catalog="system" symbolScale="large"/>
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <connections>
+                                <action selector="cartBtnAction:" destination="BYZ-38-t0r" id="5K1-7v-S32"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="cartBtn" destination="bvF-PQ-ng9" id="mjC-Ns-Ilb"/>
                         <outlet property="pizzaTableView" destination="d9n-3d-XZY" id="duJ-J3-Dq3"/>
                         <outlet property="spinner" destination="eys-Ge-Z3u" id="FPC-f9-MGd"/>
                     </connections>
@@ -260,13 +268,14 @@
         <!--Home-->
         <scene sceneID="UoS-fQ-Yts">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="kBZ-1D-G5C" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kBZ-1D-G5C" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" id="DAU-iV-8cC">
                         <imageReference key="image" image="house.fill" catalog="system" symbolScale="medium"/>
                         <color key="badgeColor" systemColor="labelColor"/>
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3vO-LJ-1fv">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -280,6 +289,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="gearshape.fill" catalog="system" width="128" height="121"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="person.2.circle.fill" catalog="system" width="128" height="121"/>

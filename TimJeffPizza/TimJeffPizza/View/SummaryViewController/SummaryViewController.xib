@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,7 +11,6 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SummaryViewController" customModule="TimJeffPizza" customModuleProvider="target">
             <connections>
                 <outlet property="continueBtn" destination="VFh-wc-exz" id="Z39-lf-iO7"/>
-                <outlet property="pizzaNameLabel" destination="NqV-Iu-hv0" id="pn0-p9-vdr"/>
                 <outlet property="statusLabel" destination="Lae-1h-a34" id="nOl-Zd-YdK"/>
                 <outlet property="totalaAmountLabel" destination="OPR-SG-ISc" id="4bV-0n-gqu"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -29,66 +28,13 @@
                             <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="841-s0-oug">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="285"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="210"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="eWh-Sj-XJJ">
-                                            <rect key="frame" x="15" y="0.0" width="384" height="285"/>
+                                            <rect key="frame" x="15" y="0.0" width="384" height="210"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NYi-8K-xcB">
-                                                    <rect key="frame" x="0.0" y="0.0" width="384" height="60"/>
-                                                    <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iho-Hz-iMJ">
-                                                            <rect key="frame" x="0.0" y="0.0" width="384" height="60"/>
-                                                            <subviews>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aAZ-rF-Jz5">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="60"/>
-                                                                    <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qeC-OM-9RE">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="150" height="60"/>
-                                                                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
-                                                                            <nil key="highlightedColor"/>
-                                                                        </label>
-                                                                    </subviews>
-                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                                    <constraints>
-                                                                        <constraint firstItem="qeC-OM-9RE" firstAttribute="top" secondItem="aAZ-rF-Jz5" secondAttribute="top" id="DOB-9w-uaJ"/>
-                                                                        <constraint firstAttribute="trailing" secondItem="qeC-OM-9RE" secondAttribute="trailing" id="Msf-E2-P23"/>
-                                                                        <constraint firstAttribute="width" constant="150" id="Udw-HH-OJ8"/>
-                                                                        <constraint firstItem="qeC-OM-9RE" firstAttribute="leading" secondItem="aAZ-rF-Jz5" secondAttribute="leading" id="g3R-w6-pNu"/>
-                                                                        <constraint firstAttribute="bottom" secondItem="qeC-OM-9RE" secondAttribute="bottom" id="rBk-hJ-2kB"/>
-                                                                    </constraints>
-                                                                </view>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rBL-Ob-ALF">
-                                                                    <rect key="frame" x="150" y="0.0" width="234" height="60"/>
-                                                                    <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pizza Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NqV-Iu-hv0">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="234" height="60"/>
-                                                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
-                                                                            <nil key="highlightedColor"/>
-                                                                        </label>
-                                                                    </subviews>
-                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="bottom" secondItem="NqV-Iu-hv0" secondAttribute="bottom" id="09M-ZX-lvU"/>
-                                                                        <constraint firstAttribute="trailing" secondItem="NqV-Iu-hv0" secondAttribute="trailing" id="L2X-A5-4Lg"/>
-                                                                        <constraint firstItem="NqV-Iu-hv0" firstAttribute="leading" secondItem="rBL-Ob-ALF" secondAttribute="leading" id="fVn-An-NaD"/>
-                                                                        <constraint firstItem="NqV-Iu-hv0" firstAttribute="top" secondItem="rBL-Ob-ALF" secondAttribute="top" id="jd3-rb-d7i"/>
-                                                                    </constraints>
-                                                                </view>
-                                                            </subviews>
-                                                        </stackView>
-                                                    </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                    <constraints>
-                                                        <constraint firstItem="Iho-Hz-iMJ" firstAttribute="top" secondItem="NYi-8K-xcB" secondAttribute="top" id="PY9-g2-xGS"/>
-                                                        <constraint firstAttribute="trailing" secondItem="Iho-Hz-iMJ" secondAttribute="trailing" id="ReY-HE-FHx"/>
-                                                        <constraint firstAttribute="height" constant="60" id="SNg-pw-4Wa"/>
-                                                        <constraint firstAttribute="bottom" secondItem="Iho-Hz-iMJ" secondAttribute="bottom" id="d1B-Q4-M5q"/>
-                                                        <constraint firstItem="Iho-Hz-iMJ" firstAttribute="leading" secondItem="NYi-8K-xcB" secondAttribute="leading" id="qA3-9j-C3u"/>
-                                                    </constraints>
-                                                </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uzv-2T-iBF">
-                                                    <rect key="frame" x="0.0" y="75" width="384" height="60"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="384" height="60"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2fQ-DL-cBY">
                                                             <rect key="frame" x="0.0" y="0.0" width="384" height="60"/>
@@ -141,7 +87,7 @@
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aR4-1T-3GQ">
-                                                    <rect key="frame" x="0.0" y="150" width="384" height="60"/>
+                                                    <rect key="frame" x="0.0" y="75" width="384" height="60"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Kg-Bu-zqr">
                                                             <rect key="frame" x="0.0" y="0.0" width="384" height="60"/>
@@ -194,7 +140,7 @@
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v2u-Ty-7CM">
-                                                    <rect key="frame" x="0.0" y="225" width="384" height="60"/>
+                                                    <rect key="frame" x="0.0" y="150" width="384" height="60"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFh-wc-exz">
                                                             <rect key="frame" x="0.0" y="0.0" width="384" height="60"/>
