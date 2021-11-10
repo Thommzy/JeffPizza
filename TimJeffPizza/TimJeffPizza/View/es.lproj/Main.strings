@@ -1,0 +1,30 @@
+
+/* Class = "UIButton"; configuration.title = "Logout"; ObjectID = "6X9-qG-uDm"; */
+"6X9-qG-uDm.configuration.title" = "Logout";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "6X9-qG-uDm"; */
+"6X9-qG-uDm.normalTitle" = "Button";
+
+/* Class = "UIViewController"; title = " "; ObjectID = "BYZ-38-t0r"; */
+"BYZ-38-t0r.title" = " ";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "DAU-iV-8cC"; */
+"DAU-iV-8cC.title" = "Home";
+
+/* Class = "UIButton"; configuration.title = "MARRIED"; ObjectID = "hu5-Lv-MI0"; */
+"hu5-Lv-MI0.configuration.title" = "MARRIED";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "hu5-Lv-MI0"; */
+"hu5-Lv-MI0.normalTitle" = "Button";
+
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "iuT-IB-3Dr"; */
+"iuT-IB-3Dr.title" = " ";
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "pvh-Sh-E50"; */
+"pvh-Sh-E50.title" = "Settings";
+
+/* Class = "UIButton"; configuration.title = "SINGLE"; ObjectID = "wT2-ck-209"; */
+"wT2-ck-209.configuration.title" = "SINGLE";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "wT2-ck-209"; */
+"wT2-ck-209.normalTitle" = "Button";
